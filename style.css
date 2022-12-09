@@ -45,6 +45,186 @@ p{
 }
 
 .date-grid {
-    display: grid;
-    grid-template-columns: repeat(7, 1fr);
-  }
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+#patrickAccueil {
+    width: auto;
+    height: auto;
+    max-width: 500px;
+    max-height: 500px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+
+}
+
+#imgdon {
+    width: 500px;
+    height: 350px;
+    border: 4px solid #dbced1;
+    margin: 30px 0px;
+}
+
+.imgbio {
+    margin-bottom: -15px;
+    width: 400px;
+    height: 250px;
+    border: 4px solid #dbced1;
+    margin-top: 20px;
+}
+
+.legende {
+    font-style: italic;
+    font-size: 13px;
+    text-align: right;
+}
+
+.imglegende {
+    width: 404px;
+}
+
+.lienbio {
+    text-decoration: underline;
+}
+
+.lienbio:hover {
+    color: #139aed;
+}
+
+#zonetxt {
+    width: 50px;
+}
+
+.article {
+    max-width: 1050px;
+    margin: 50px 0px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+}
+
+.article:hover {
+    background-color: #dbced1;
+    animation-name: bordure;
+    animation-duration: 0.3s;
+}
+
+.soustitre_article {
+    padding-left: 3px;
+    font-size: 16px;
+    font-weight: medium;
+}
+
+.titre_article {
+    padding-left: 3px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.img_article {
+    height: 350px;
+    width: 500px;
+    border: 4px solid #dbced1;
+    border-radius: 5%
+}
+
+
+body {
+    margin: 0;
+}
+
+.lien {
+    font-style: italic;
+    font-weight: bold;
+}
+
+.lien:hover {
+    color: #139aed;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+    background-color: #139aed;
+}
+
+
+
+.txtanim {
+    animation-duration: 4.5s;
+    animation-name: fadein
+}
+
+@keyframes fadein {
+    0% {
+        opacity: 0%;
+    }
+
+    50% {
+        opacity: 0%;
+    }
+
+    100% {
+        opacity: 100%;
+    }
+}
+
+.imggalerie {
+    border: 0px solid red;
+    border-radius: 15%;
+    animation-duration: 2.5s;
+    animation-name: slidein;
+    animation-iteration-count: 1;
+}
+
+@keyframes slidein {
+    from {
+        margin-left: 100%;
+    }
+
+    to {
+        margin-left: 0%;
+    }
+}
+
+.lientwit {
+    color: #139aed;
+    font-weight: bold;
+}
