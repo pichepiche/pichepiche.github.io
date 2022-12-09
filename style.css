@@ -44,12 +44,48 @@ p{
     margin-top: 50px;
 }
 
-.date-grid {
-  display: grid;
-  grid-template-columns: repeat(7, 1fr);
-}
+  ol {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 1em;
+    margin: 0 auto;
+    max-width: 64em;
+    padding: 0;
+  }
 
+  
+  ol.day-grid li {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    margin-left: 0;
+    height: 12vw;
+    max-height: 125px;
+  }
 
+  .boutonCal {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    color: white;
+    font-weight: bolder;
+    background-color: #f34040;
+    border: 1px solid #3bb197;
+    height: 120px;
+    width:180px;
+    font-size: calc(16px + (21 - 16) * ((100vw - 300px) / (1600 - 300)));
+  }
+
+  .boutonCal:hover{
+    background-color: #c03535;
+  }
+
+  .calendar {
+    position: relative;
+    top:50px;
+  }
 
 
 
